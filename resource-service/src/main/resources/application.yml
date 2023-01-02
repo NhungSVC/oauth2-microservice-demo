@@ -1,0 +1,9 @@
+server:
+  port: 8081
+security:
+  oauth2:
+    client:
+      client-id: ${AUTH_CLIENTID:nhung}
+      client-secret: ${AUTH_SECRET:nhung}
+    resource:
+      token-info-uri: http://localhost:8080/oauth/check_token
